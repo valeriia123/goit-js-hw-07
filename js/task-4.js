@@ -1,5 +1,4 @@
 const formEl = document.querySelector('.login-form');
-// console.dir(formEl);
 
 formEl.addEventListener('submit', event => {
     event.preventDefault();
@@ -11,6 +10,6 @@ formEl.addEventListener('submit', event => {
         alert('All form fields must be filled in');
     } else {
         console.log(formData);
+        formEl.reset();
     }
-    formEl.reset();
 })
